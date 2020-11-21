@@ -1,0 +1,618 @@
+@charset "UTF-8"; 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    background-image: url("imagens/background.jpg") ;
+    background-size: auto;
+}
+div#interface{
+    min-width: 800px;
+    max-width: 1200px;
+    background-color: #ffffff;
+    margin: -20px auto -20px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+img{
+    max-width: 100%;
+}
+img{
+    border: 0px;
+    vertical-align: top;
+}
+
+
+/*Formatação do Cabeçalho*/
+header#cabecalho{
+    position: relative;
+    padding: 40px 0;
+    display: inline-block;
+    width: 100%;
+    background-image: linear-gradient(#F0F0F0 0%, #FFFFFF 100%);
+}
+div.largura-conteiner-cabecalho{
+    width: 1000;
+}
+div.cabacalho-left{
+    float: left;
+    width: 28%;
+}
+div.cabecalho .logo{
+    text-decoration: none;
+}
+div.cabecalho .logo strong{
+    position: absolute;
+    top: -999em;
+    left: -999em;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -999em;
+    overflow: hidden;
+}
+div.cabecalho h2{
+    font-family: fantasy;
+    font-size: 14pt;
+}
+div.cabecalho h2.logo-montanha{
+    margin-left: 20px;
+}
+div.cabecalho a.logo-montanha{
+    margin-left: 2px;
+}
+div.cabecalho h2.logo2{
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+/*Formatação Cabeçalho-Topo*/
+div.cabecalho-top{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -30px;
+    padding: 8px 0px;
+    font-size: 13pt;
+    background: #ffffff;
+}
+div.largura-conteiner-top{
+    width: 800px;
+    background: transparent;
+}
+div.cabecalho-top-esquerda{
+    float: left;
+    width: auto;
+}
+div.cabecalho-top-direita{
+    float: right;
+    width: auto;
+}
+div.social-links ul{
+    list-style-type: none;
+}
+div.social-links li {
+    display: inline-block;
+    margin-right: 9px;
+}
+div.boas-vindas-msg{
+    font-weight: 500;
+    color: #000;
+}
+
+/*Formatação Cabeçalho-Baixo*/
+div.cabecalho-bottom{
+    border-top: 1px #808080 solid;
+    margin: auto 20px auto 20px;
+    padding-bottom: 10px; 
+}
+
+/*Formatação do Menu*/
+nav.menu ul{
+    list-style-type: none;
+    text-align: center;
+    margin-top: 10px;
+    padding: 2px; 
+    background-color: #f0f0f0;
+    border-radius: 10px 0px 10px 0px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+}
+nav.menu li{
+    display: inline-block; 
+    padding: 0px 10px 0px 10px;
+}
+nav.menu li.li-linha{
+    border-right: 1px #808080 solid;
+}
+nav.menu h1{
+    display: none;
+}
+nav.menu a{
+    text-decoration: none; 
+    color: #000;
+    transition: color 0,8s; 
+}
+nav.menu a:visited{
+    color: #000;
+    transition: color 0,8s; 
+}
+nav.menu a.funcional:hover{
+    color: red;
+}
+
+
+/*Formatação Rodapé*/
+footer.rodape{
+    background: linear-gradient(#ffffff 0%, #f0f0f0 100%);
+}
+div.rodape-conteiner{
+    width: 800px;
+    margin: 0 auto;
+    background: transparent;
+}
+div.rodape{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 11pt;
+}
+div.rodape address{
+    text-align: center;
+    line-height: 15px;
+}
+div.titulo-sociais-links{
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding-top: 40px;
+    font-size: 16pt;
+    font-weight: normal;
+}
+div.sociais-links ul{
+    list-style-type: none;
+    text-align: center;
+    padding-top: 20px;
+}
+div.sociais-links li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+
+/*Formatação Seção-Produtos*/
+section.inicio{
+    padding-bottom: 1px;
+    display: flex;
+    justify-content: center;
+}
+div.conteiner-main{
+    width: 1000px;   
+    margin-bottom: 30px !important;
+    min-height: 550px;
+    padding-top: 0;
+    position: relative;
+}
+div.orientacao-main{
+    float: right;
+}
+div.orientacao ul{
+    width: auto;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+div.orientacao li{
+    display: inline-block;
+    font-size: 12pt;
+}
+div.orientacao a{
+    text-decoration: none;
+    color: #000;
+}
+div.orientacao strong{
+    font-weight: normal;
+}
+div.categoria-titulo{
+    width: auto;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+div.categoria-titulo h1{
+    font-size: 16pt;
+    font-weight: 700;
+}
+aside.categorias{
+    float: left; 
+    width: 260px; 
+    height: 560px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    margin: 31px 15px 0px 0px; 
+    border-radius: 10px;
+}
+aside.categorias a{
+    text-decoration: none;
+    color: black;
+    line-height: 1.2em;
+}
+aside.categorias a:hover{
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.7);
+}
+aside.categorias li{
+    font-size: 16px;
+    margin-left: 20px;
+}
+aside.categorias li.li1{
+    margin-top: 20px;
+}
+aside.categorias li.li1 h5{
+    font-size: 16px;
+    font-weight: bold;
+}
+#conteiner.produtos-conteiner{  
+    display: grid;
+    grid-template-areas: "li li li";
+    list-style: none;
+    text-align: center;
+    padding-top: 20px; 
+    grid-gap: 10px;
+}
+#conteiner.produtos-conteiner li{
+    max-width: 100%;
+    min-width: 10%;
+}
+.imagem-produto img{
+    margin-bottom: 5px;
+    border: 1px solid #999;
+    border-radius: 10px;    
+    width: 280px;
+}
+.imagem-produto img:hover{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.6);
+}
+div.produto{
+    margin: 12px 2px 6px;
+}
+div.nome-produto{
+    background: none;
+    margin: 0px 0px 5px;
+}
+div.nome-produto a{
+    color: #808080;
+    text-decoration: none;
+    margin-top: 0px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+h2.nome-produto{
+    background: none;
+    margin: 0px 0 5px;
+}
+div.caixa-preco{
+    margin: 5px 0 0px;
+    font-size: 14pt;
+    text-align: center;
+}
+div.caixa-preco .preco{
+    font-weight: 700;
+    color: #000;
+    padding: 4px;
+    background-color: #d0d0d0;
+    border-radius: 20px; 
+}
+div.produto a{
+    color: #000;
+    text-decoration: none;
+    margin-top: 0px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    transition: color 0,8s;
+}
+div.produto a:hover{
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: underline;
+}
+
+
+/*Formatação Descrição-Produtos*/
+article.desc-produtos{
+    max-width: 1000px;
+    min-width: 800px;
+    height: 480px;
+}
+article.desc-produtos li{
+    box-sizing: border-box;
+    list-style-type: none;
+}
+div.desc-produto{
+    background-color: #ffffff;
+    float: left;
+    width: 720px;
+    height: 400px;
+    margin-top: 55px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+div.desc-produto img{
+    float: left;
+    margin-top: 60px;
+}
+div.desc-produto h2{
+    float: right;
+    margin-top: 10px;
+    margin-right: 15%;
+}
+div.desc-produto h2.nome-produto{
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+}
+div.desc-produto span.sinopse{
+    float: right;
+    color: rgb(102, 102, 102);
+    padding-top: 20px;
+    padding-right: 4px;
+}
+div.pagamento{
+    background-color: #ffffff;
+    float: right;
+    margin-top: 37px;
+    border-radius: 5px;
+    width: 250px;
+    height: 400px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+div.pagamento span{
+    font-size: 26px;
+    font-weight: bold;
+}
+div.pagamento .preco{
+    color: rgb(102, 102, 102);
+    margin-top: 20px;
+    margin-bottom: 80%;
+    margin-left: 5%;
+}
+div.pagamento p{
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+div.preco a{
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+}
+div.botao-comprar a{
+    padding: 25px 60px 25px 60px;
+    background-color: #f0f0f0;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+div.botao-comprar{
+    text-align: center;
+}
+div.pagamento a:hover{
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.7);
+}
+div.trailer{
+    text-align: center;
+}
+div.trailer iframe{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    background-color: #ffffff;
+}
+div.ficha{
+    font-weight: normal;
+    background-color: rgb(242, 242, 242);
+    vertical-align: baseline;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+table.tabela-ficha{
+    vertical-align: baseline;
+    width: 100%;
+}
+table.tabela-ficha caption{
+    color: rgb(102, 102, 102); 
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+tbody > tr:nth-child(odd) {
+    background-color:#ffffff;
+}
+tbody > tr:nth-child(even) {
+    background-color:rgb(242, 242, 242);
+  } 
+tr.ficha1{
+    vertical-align: baseline;
+    background-color: #ffffff;
+}
+td.ficha2{
+    vertical-align: baseline;
+    color: rgb(102, 102, 102);
+    padding: 10px;
+    font-size: 14px;  
+    border-radius: 3px;
+}
+
+/*Formatação Introdução da Empresa*/
+div.conteiner-texto{
+    padding-top: 100px; 
+}
+div.corpo-texto p{
+    line-height: 1.5; 
+    font-size: 12pt; 
+    margin: 0 0 15px;
+    color: #3d3d3d;
+}
+div.pagina-titulo{
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+div.pagina-titulo h1{
+    font-size: 20pt;
+    font-weight: 700;
+    color: #000;
+    margin: 15px 0 0;
+    line-height: 1.5;
+}
+div.corpo-texto h3{
+    color: #3d3d3d;
+    font-size: 16pt;
+    font-weight: normal;
+    margin: 0 0 5px;
+    line-height: 1.5;
+}
+
+
+/*Formatação Buscar*/
+form.buscar{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+#divBusca{
+    background-color:#FFFFFF;
+    border:solid 2px #999;
+    border-radius:10px;
+    width:400px;
+    height:40px;
+}   
+#txtBusca{
+    float:left;
+    padding-left: 5px;
+    background-color:transparent;
+    font-size:18px;
+    border: none;
+    height:40px;
+    width:358px;
+}
+#btnBusca{
+    border:none;
+    float: right;
+    border-radius:0 7px 7px 0;
+    font-weight:bold;
+    background:#f0f0f0 100%;
+    cursor: pointer;
+    padding: 5px;
+}
+#divBusca img{
+  float:left;
+}
+
+
+/*Formatação Fale Conosco*/
+form.faleconosco {
+    margin: 100px auto;
+    width: 500px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+form div + div {
+    margin-top: 1em;
+}
+label {
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+}
+input, textarea {
+    font: 1em sans-serif;
+    width: 380px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+input:focus, textarea:focus {
+    border-color: #000;
+}
+textarea {
+    vertical-align: top;
+    height: 5em;
+    min-height: 3em;
+    max-height: 9em;
+    resize: vertical;
+}
+.button {
+    padding-left: 435px; 
+}
+
+
+/*Formatação spans do index.html*/
+.std{
+    display:none;
+    padding: 0;
+}
+.service-cms{
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 100%;
+    padding: 0 0 100px 0;
+
+}
+.service-cms .service{
+    float: left; /*Sem isso aqui a linha quebra em menor resoluçao*/
+    cursor: pointer; 
+    display: inline-block; 
+    width: 33%; 
+    text-align: center;
+}
+.service-heading > a {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    width: 20%;
+    text-decoration: none;
+}
+.service.service2{ 
+    border-left: 1px 
+    solid #dcdcd9; 
+    border-right: 1px solid #dcdcd9; 
+}
+.service-sub-heading > a {
+    font-size: 14px; 
+    color: #808080;
+    position: relative;
+    float: left;
+    border: 1px solid white;
+    text-decoration: none;
+}
+.service-cms .icon{
+    background: rgba(0, 0, 0, 0) url("imagens/Service-Icon.png") no-repeat scroll 0px 0px; 
+    padding: 0 0 0 60px;
+    display: inline-block; 
+    text-align: left;
+}
+.service-cms .service .icon-1.icon{
+    background-position: 0 6px;
+    padding: 10px 0px 0px 60px
+}
+.service-cms .service .icon-2.icon{
+    background-position: 0 -198px;
+    padding: 10px 0px 0px 50px
+
+}
+.service-cms .service .icon-3.icon{
+    background-position: 10px -404px;
+    padding: 10px 0px 0px 60px
+}
+.service-cms .service:hover .icon-1.icon{
+    background-position: 0 -96px; 
+}
+.service-cms .service:hover .icon-2.icon{
+    background-position: 0 -301px;
+}
+.service-cms .service:hover .icon-3.icon{
+    background-position: 10px -506px;
+}
+.service-cms .service:hover .service-heading > a{
+    color: #1e4493;
+}

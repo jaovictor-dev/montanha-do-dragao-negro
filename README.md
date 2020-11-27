@@ -15,5 +15,8 @@
 <p>Link do projeto hospedado no GitHub Pages -> https://jaovictor-dev.github.io/montanha-do-dragao-negro/index.html</p>
 
 <p>Integrantes:
- João Victor Ferreira dos Santos - 913A
+ João Victor Ferreira dos Santos - 913A<br>
  Danilo Magalhães de Freitas - 913A</p>
+ 
+<p>obs: estava começando a atualizar para a entrega 5 mas lembrei que o projeto4 ainda não foi corrigidokkk, está tudo igual menos essa linha</p>
+ 

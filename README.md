@@ -12,7 +12,7 @@
 
 <p>2.5) Todas as páginas foram atualizadas com uma imagem de background no body(a mesma para todas), as páginas de descrição dos jogos também têm imagem de fundo nas sections(logo do ps3 e ps4 em loop)</p>
 
-<p>Link do projeto hospedado no GitHub Pages -> https://jaovictor-dev.github.io/montanha-do-dragao-negro/index.html</p>
+<p>Link do projeto hospedado no GitHub Pages -> https://jaovictor-dev.github.io/montanha-do-dragao-negro/</p>
 
 <p>Integrantes:
  João Victor Ferreira dos Santos - 913A<br>

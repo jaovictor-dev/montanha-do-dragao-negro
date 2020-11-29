@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="tablet.css" media="screen and (min-width: 600px) and (max-width: 768px)">
+    <link rel="stylesheet" href="mobile.css" media="screen and (min-width: 400px) and (max-width: 425px)">
+	<title>Login</title>
+	<style type="text/css">
+		/* TELA DE LOGIN/CADASTRO*/
+
+		*, *:before, *:after { 
+		    margin:0;
+		    padding:0;
+		    font-family: Arial,sans-serif;
+		}
+
+
+		/* remove a linha dos links */
+		a{
+		    text-decoration: none;
+		}
+
+		/* esconde as ancoras da tela */
+		a.links{
+		    display: none;
+		}
+		.content{
+		    width: 500px;
+			min-height: 560px;
+			height: 700px;  
+		    margin: 0px auto;
+			position: relative;   
+		}
+		h1.login-cadastro{
+		    font-size: 48px;
+		    color: black;
+		    padding: 2px 0 10px 0;
+		    font-family: Arial, sans-serif;
+		    font-weight: bold;
+		    text-align: center;
+			padding-bottom: 30px;
+			text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+		}
+		h1.login-cadastro:after{
+		    content: ' ';
+		    display: block;
+		    width: 100%;
+		    height: 2px;
+		    margin-top: 10px;
+		    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 20%,rgba(0,0,0,1) 53%,rgba(0,0,0,0.8) 79%,rgba(0,0,0,0) 100%); 
+		    background: linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 20%,rgba(0,0,0,1) 53%,rgba(0,0,0,0.8) 79%,rgba(0,0,0,0) 100%); 
+		}
+		p{
+		    margin-bottom:15px;
+		}
+		.content p:first-child{
+		    margin: 0px;
+		}
+		         
+		label.login-cadastro{
+		    color: black;
+			float: left;
+			text-align: left;
+		}
+		label{
+			width: 150px;
+		}
+		/* place holder */
+		::-webkit-input-placeholder  {
+		    color: #bebcbc; 
+		    font-style: italic;
+		}
+		         
+		input.login-cadastro:-moz-placeholder, textarea:-moz-placeholder{
+		    color: #bebcbc;
+		    font-style: italic;
+		}
+		input.login-cadastro {
+		    outline: none;
+		}
+		/*estilo dos input*/
+		input.login-cadastro{
+		    width: 95%;
+		    margin-top: 4px;
+		    padding: 10px;
+		    -webkit-border-radius: 3px;
+		    border-radius: 3px;
+		    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.6) inset;
+		    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.6) inset;
+		    -webkit-transition: all 0.2s linear;
+		    transition: all 0.2s linear;
+		}
+		input.login-cadastro-checkbox, input.checkbox{
+			margin: 2px;
+			padding: auto;
+			width: 13px;
+		}
+		         
+		/*estilo do botão submit */
+		input.login-cadastro[type="submit"]{
+		    width: 100%!important;
+		    cursor: pointer;  
+		    background: rgb(0, 0, 0);
+		    padding: 8px 5px;
+		    color: #fff;
+		    font-size: 20px;  
+		    border: 1px solid #fff;   
+		    margin-bottom: 10px;  
+		    text-shadow: 0 1px 1px #333;
+		    -webkit-border-radius: 5px;
+		    border-radius: 5px;
+		    transition: all 0.2s linear;
+		}
+		/*estilo do botão submit no hover */
+		input.login-cadastro[type="submit"]:hover{
+		    background: #4ab3c6;
+		}
+
+		.link{
+		    position: absolute;
+		    background: #d8d8d8;
+		    color: #6e6e6e;
+		    left: 0px;
+		    height: 20px;
+		    width: 440px;
+		    padding: 17px 30px 22px 30px;
+		    font-size: 16px;
+		    text-align: right;
+		    border-top: 1px solid black;
+		    -webkit-border-radius: 0 0  5px 5px;
+		    border-radius: 0 0  1em 1em;
+		}
+		         
+		.link a {
+		    font-weight: bold;
+		    background: #f7f8f1;
+		    padding: 6px;
+		    color: rgb(0, 0, 0);
+		    margin-left: 10px;
+		    border: 1px solid #cbd518;
+		    -webkit-border-radius: 4px;
+		    border-radius: 4px;  
+		    -webkit-transition: all 0.4s linear;
+		    transition: all 0.4s  linear;
+		}
+		         
+		.link a:hover {
+		    color: #000000;
+		    background: white;
+		    border: 1px solid white;
+		}
+		#cadastro, #login{
+		    position: absolute;
+			display: block;
+		    top: 0px;
+		    width: 88%;   
+		    padding: 18px 6% 60px 6%;
+		    margin: 0 0 35px 0;
+		    background: #f7f7f7;
+		    border: 1px solid #CCC;
+		    border-radius: 1em;
+		    -webkit-animation-duration: 0.5s;
+		    -webkit-animation-timing-function: ease;
+		    -webkit-animation-fill-mode: both;
+		    animation-duration: 0.5s;
+		    animation-timing-function: ease;
+		    animation-fill-mode: both;
+		}
+
+		/* Efeito ao clicar no botão ( Ir para Login ) */
+		#paracadastro:target ~ .content #cadastro, #paralogin:target ~ .content #login{
+		    z-index: 2;
+		    -webkit-animation-name: fadeInLeft;
+		    animation-name: fadeInLeft; 
+		    -webkit-animation-delay: .1s;
+			animation-delay: .1s;
+		}
+		         
+		/* Efeito ao clicar no botão ( Cadastre-se ) */
+		#registro:target ~ .content #login, #paralogin:target ~ .content #cadastro{
+		    -webkit-animation-name: fadeOutLeft;
+		    animation-name: fadeOutLeft;
+		}
+
+		/*fadeInLeft*/
+		@-webkit-keyframes fadeInLeft {
+		    0% {
+		        opacity: 0;
+		        -webkit-transform: translateX(-20px);
+		    }
+		    100% {
+		        opacity: 1;
+		        -webkit-transform: translateX(0);
+		    }
+		}
+		         
+		@keyframes fadeInLeft {
+		    0% {
+		        opacity: 0;
+		        transform: translateX(-20px);
+		    }
+		    100% {
+		        opacity: 1;
+		        transform: translateX(0);
+		    }
+		}
+		         
+		/*fadeOutLeft*/
+		@-webkit-keyframes fadeOutLeft {
+		    0% {
+		        opacity: 1;
+		        -webkit-transform: translateX(0);
+		    }
+		    100% {
+		        opacity: 0;
+		        -webkit-transform: translateX(-20px);
+		    }
+		}
+		         
+		@keyframes fadeOutLeft {
+		    0% {
+		        opacity: 1;
+		        transform: translateX(0);
+		    }
+		    100% {
+		        opacity: 0;
+		        transform: translateX(-20px);
+		    }
+		}
+	</style>
+	
+</head>
+<body>
+	<div id="interface">
+
+    <header id="cabecalho">
+
+        <div class="cabecalho-top">
+            <div class="largura-conteiner-top">
+                <div class="cabecalho-top-esquerda">
+                    <div class="social-links">  
+                        <ul>
+                            <li><a href="" target="_blank"><img src="imagens/icone-facebook.png"></a></li>
+                            <li><a href="" target="_blank"><img src="imagens/icone-instagram.png"></a></li>
+                            <li><a href="" target="_blank"><img src="imagens/icone-twitter.png"></a></li>
+                            <li><a href="https://i.pinimg.com/736x/bd/bf/25/bdbf250c33bc2c0090e276715b8c87d4.jpg" target="_blank"><img src="imagens/icone-whatsapp.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cabecalho-top-direita">
+                    <div class="boas-vinda-msg">Seja bem vindo ao nosso site!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cabecalho">
+                <div class="largura-conteiner-cabecalho">
+                    <div class="cabecalho-left">
+                        <h1 class="logo"><strong>Montanha do Dragão Negro</strong><a href="index.html" title="Montanha do Dragão Negro" class="logo"><img src="imagens/logo.png" alt="Montanha do Dragão Negro"></a></h1>
+                        <h2 class="logo-montanha">Montanha<a class="logo-montanha"><img src="imagens/icone-montanha.png"></a></h2>
+                        <h2 class="logo2">do Dragão Negro</h2>
+                    </div> 
+                </div>
+
+                <form class="buscar" method="post" action="index.html">
+                    <div id="divBusca">
+                        <input type="text" id="txtBusca" list="historico" placeholder="O que você está procurando?" value="" maxlength="128" />
+                        <button id="btnBusca"><img src="imagens/buscar.png" alt="buscar..." width="30" height="30"></button>
+                    </div>
+                    <datalist id="historico">
+                        <option value = "PlayStation 5"></option>
+                        <option value = "PlayStation 4"></option>
+                        <option value = "Xbox"></option>
+                    </datalist>
+                </form>
+				<div class="conta">           
+                    <button class="btnConta"><a href="login.html"><img src="imagens/usuario.png" alt=""> Conta </a></button>   
+                    <button class="btnCarrinho"><a href=""><img src="imagens/carrinho.png" alt=""> Carrinho </a></button>
+                </div> 
+        </div>
+
+        <div class="cabecalho-bottom">
+            <nav class="menu">
+                <h1 class="login-cadastro">Categorias <img src=""></h1>
+                <ul>
+                    <li class="li-linha"><a class="funcional" href="informatica.html">Informática</a></li>
+                    <li class="li-linha"><a class="funcional" href="consoles.html" target="_self">Consoles</a></li>                
+                    <li class="li-linha"><a class="funcional" href="games.html" target="_self">Games</a></li> 
+                    <li class="li-linha"><a class="funcional" href="sobre-a-empresa.html" target="_self">Sobre a Empresa</a></li> 
+                    <li><a class="funcional" href="fale-conosco.html" target="_self">Fale Conosco</a></li> 
+                </ul>
+            </nav>
+        </div>
+	</header>
+	
+	<section class="inicio">
+        <div class="conteiner-main">
+            <div class="conteiner">
+                <div class="orientacao-main">
+                    <div class="orientacao">
+                        <ul>
+                            <li class="home"><a href="index.html title=" title="Voltar p/ Página Inicial">Início /</a></li>
+                            <li class="categoria"><strong>Sua Conta</strong></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="categoria-titulo" style="margin-bottom: 80px;">
+                    <h1>Sua Conta</h1>
+                </div>         
+  
+				<a class="links" id="paracadastro"></a>
+				<a class="links" id="paralogin"></a>
+			
+				<div class="content">      
+					<!--FORMULÁRIO DE LOGIN-->
+					<div id="login">
+						<form method="post" action=""> 
+						<h1 class='login-cadastro'>Login</h1> 
+						<p> 
+							<label  class="login-cadastro" for="nome_login">Seu nome ou e-mail:</label>
+							<input  class="login-cadastro" id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+						</p>
+						
+						<p> 
+							<label class="login-cadastro"for="email_login">Sua senha:</label>
+							<input class="login-cadastro"id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+						</p> 
+						
+						<p>
+							<input class="login-cadastro-checkbox" type="checkbox" name="manterlogado" id="manterlogado" value="" checked/> 
+							<label class="login-cadastro"for="manterlogado" style="width: 120px;">Manter-me logado</label>
+						</p>
+						
+						<p> 
+							<input class="login-cadastro" type="submit" value="Logar" /> 
+						</p>
+						
+						<p class="link">
+							Ainda não tem conta?
+							<a href="#paracadastro">Cadastre-se</a>
+						</p>
+						</form>
+					</div>
+				
+					<!--FORMULÁRIO DE CADASTRO-->
+					<div id="cadastro">
+						<form method="post" action=""> 
+						<h1 class="login-cadastro">Cadastro</h1> 
+						
+						<p> 
+							<label class="login-cadastro" for="nome_cad">Seu nome:</label>
+							<input class="login-cadastro" id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+						</p>
+						
+						<p> 
+							<label class="login-cadastro" for="email_cad">Seu e-mail:</label>
+							<input class="login-cadastro" id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+						</p>
+						
+						<p> 
+							<label class="login-cadastro" for="phone_cad">Seu telefone:</label>
+							<input class="login-cadastro" id="phone_cad" name="phone_cad" required="required" type="tel" placeholder="(XX) XXXXXX-XXXXX" pattern="\([0-9]{2}\)([\s])[0-9]{4,6}-[0-9]{4}"/> 
+						</p>
+						
+						<p> 
+							<label class="login-cadastro" for="senha_cad">Sua senha:</label>
+							<input class="login-cadastro" id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+						</p>
+
+						<p> 
+							<label class="login-cadastro" for="senha_cad">Confirme sua senha:</label>
+							<input class="login-cadastro" id="senha_cad" name="senha_cad" required="required" type="password" placeholder=""/>
+						</p>
+						
+						<p>
+							<input  class="checkbox" type="checkbox" name="promocoes" id="promocoes" checked/> 
+							<label class="promocao1" for="promocoes">Quer receber nossas promocões por i-mail?</label>
+						</p>
+						
+						<p>
+							<input  class="checkbox" type="checkbox" name="promocoes" id="promocoes" checked/> 
+							<label class="promocao" for="promocoes">Quer receber nossas promocões pelo Zap?</label>
+						</p>
+
+						<p>
+							<input  class="checkbox" type="checkbox" name="aceito" id="iaceito"/> 
+							<label class="aceito" for="iaceito" style="width: 160px; font-size: 14px; float: left;">Aceito os  <a href="">termos de uso</a></label>
+						</p>
+						
+						<p> 
+							<input class="login-cadastro" type="submit" value="Cadastrar"/> 
+						</p>
+						
+						<p class="link">  
+							Já tem conta?
+							<a href="#paralogin"> Ir para Login </a>
+						</p>
+						</form>
+					</div>
+				</div>
+            </div>
+        </div>
+    </section>
+		 
+ 	<footer class="rodape">
+        <div class="rodape-conteiner">
+            <div class="rodape">
+                <address>&copy; IMPÉRIO DA MONTANHA DO DRAGÃO NEGRO<br>CNPJ xx.xxx.xxx/xxx-xx - Todos os direitos reservados.<br>
+                <br>Todos os produtos estão sujeitos à disponibilidade de estoque.</address> 
+            </div>
+            <div class="titulo-sociais-links">
+                <h3>NOSSAS REDES SOCIAIS</h3>
+            </div>
+            <div class="sociais-links">
+                <ul>
+                    <li><a href="" target="_blank"> <img src="imagens/icone-facebook-G.png"></a></li>
+                    <li><a href="" target="_blank"> <img src="imagens/icone-youtube-G.png"></a></li>
+                    <li><a href="" target="_blank"> <img src="imagens/icone-twitter-G.png"></a></li>
+                    <li><a href="https://i.pinimg.com/736x/bd/bf/25/bdbf250c33bc2c0090e276715b8c87d4.jpg" target="_blank"> <img src="imagens/icone-instagram-G.png"></a></li>
+                <ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

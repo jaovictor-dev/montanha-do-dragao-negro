@@ -29,7 +29,7 @@
 <p>1) Sem problemas, eu espero...</p>
 
 <p>2)</p>
-<p>2.1) Formulário implementado no botão "Conta" no cabeçalho do site, arquivo "login.html"</p>
+<p>2.1) Formulário implementado no botão "Conta" no cabeçalho do site, arquivo "login.html", e também já tinha um formulário na página "Fale Conosco" no menu, arquivo "fale-conosco.html"</p>
 <p>2.2) Adaptado  para Tablet / 768px - 600px e Mobile L / 425pxx - 400px(eu usei as medidas que o google deu), desktop já foi implementado desde o inicio, arquivos "mobile.css" e "tablet.css" <br> obs: todas as páginas foram incluidas</p>
 
 <p>Link do projeto hospedado no GitHub Pages -> https://jaovictor-dev.github.io/montanha-do-dragao-negro/</p>

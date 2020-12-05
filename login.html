@@ -9,14 +9,12 @@
 	<title>Login</title>
 	<style type="text/css">
 		/* TELA DE LOGIN/CADASTRO*/
-
 		*, *:before, *:after { 
 		    margin:0;
 		    padding:0;
 		    font-family: Arial,sans-serif;
 		}
-
-
+		
 		/* remove a linha dos links */
 		a{
 		    text-decoration: none;
@@ -27,11 +25,11 @@
 		    display: none;
 		}
 		.content{
-		    width: 500px;
-			min-height: 560px;
-			height: 730px;  
+			width: 500px;
+			height: 750px;
 		    margin: 0px auto;
-			position: relative;   
+			position: relative;
+			transition: height 0.2s;   
 		}
 		h1.login-cadastro{
 		    font-size: 48px;
@@ -340,7 +338,7 @@
 						
 						<p class="link">
 							Ainda não tem conta?
-							<a href="#paracadastro">Cadastre-se</a>
+							<a href="#paracadastro" onclick="aumentar()">Cadastre-se</a>
 						</p>
 						</form>
 					</div>
@@ -396,7 +394,7 @@
 						
 						<p class="link">  
 							Já tem conta?
-							<a href="#paralogin"> Ir para Login </a>
+							<a href="#paralogin" onclick="diminuir()"> Ir para Login </a>
 						</p>
 						</form>
 					</div>
@@ -423,6 +421,7 @@
                 <ul>
             </div>
         </div>
-    </footer>
+	</footer>
+	<script src="script.js"></script>
 </body>
 </html>

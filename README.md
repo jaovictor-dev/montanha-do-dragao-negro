@@ -53,6 +53,8 @@
 <p>Integrantes:
  João Victor Ferreira dos Santos - 913A<br>
  Danilo Magalhães de Freitas - 913A</p>
+ 
+ <p>OBS: DEI UM PUSH SEM QUERER ADCIONANDO COISAS DA ENTREGA-6, O COMMIT TÁ "validar formularios" MAS NÃO É ISSO</p>
 
 
 

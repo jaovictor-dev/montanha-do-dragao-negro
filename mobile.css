@@ -24,7 +24,7 @@
         text-align: left;
     }
     .button{
-        padding-left: 310px;
+        margin-left: 255px;
     }
     div.categoria-titulo{
         margin-top: 60px;
@@ -109,11 +109,11 @@
         width: 33%; 
     }
     .service-heading > a {
-        font-size: 11px;
+        font-size: 10px;
         width: 20%;
     }
     .service-sub-heading > a {
-        font-size: 12px; 
+        font-size: 10px; 
     }
     .service-cms .icon{
         padding: 0 0 0 30px;
@@ -129,7 +129,7 @@
     }
     div.content{
         width: 345px;
-        font-size: 14px;
+        font-size: 10px;
     }
     label.promocao{
         width: 280px; 
@@ -140,4 +140,15 @@
     p.link{
         width: 285px;
     }
+    /*banner*/
+    .left img{
+        margin-top: 76%;
+    }
+    .right img{
+        margin-top: 89%;
+    }
+    .left, .right{
+        margin-bottom: 20px;
+        height: 80px;
+    } 
 }

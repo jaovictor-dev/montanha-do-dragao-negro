@@ -48,4 +48,13 @@
     div.categoria-titulo{
         margin-top: 30px;
     } 
+
+    /*banner*/
+    .left img, .right img{
+        margin-top: 77%;
+    }
+    .left, .right{
+        margin-bottom: 20px;
+        height: 140px;
+    } 
 }

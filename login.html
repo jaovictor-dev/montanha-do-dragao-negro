@@ -315,16 +315,16 @@
 				<div class="content">      
 					<!--FORMULÁRIO DE LOGIN-->
 					<div id="login">
-						<form method="post" action=""> 
+						<form name="login" method="post" action="" onsubmit="return Logar();"> 
 						<h1 class='login-cadastro'>Login</h1> 
 						<p> 
 							<label  class="login-cadastro" for="nome_login">Seu nome ou e-mail:</label>
-							<input  class="login-cadastro" id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+							<input  class="login-cadastro" id="nome_login" name="nome_login" required="required" type="text"/>
 						</p>
 						
 						<p> 
-							<label class="login-cadastro"for="email_login">Sua senha:</label>
-							<input class="login-cadastro"id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+							<label class="login-cadastro"for="senha_login">Sua senha:</label>
+							<input class="login-cadastro"id="senha_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
 						</p> 
 						
 						<p>
@@ -345,7 +345,7 @@
 				
 					<!--FORMULÁRIO DE CADASTRO-->
 					<div id="cadastro">
-						<form method="post" action=""> 
+						<form name="cadastro" method="post" action="" onsubmit="return Cadastrar();"> 
 						<h1 class="login-cadastro">Cadastro</h1> 
 						
 						<p> 
@@ -360,7 +360,7 @@
 						
 						<p> 
 							<label class="login-cadastro" for="phone_cad">Seu telefone:</label>
-							<input class="login-cadastro" id="phone_cad" name="phone_cad" required="required" type="tel" placeholder="(XX) XXXXXX-XXXXX" pattern="\([0-9]{2}\)([\s])[0-9]{4,6}-[0-9]{4}"/> 
+							<input class="login-cadastro" id="phone_cad" name="phone_cad" required="required" type="tel" placeholder="(XX) XXXXX-XXXX" pattern="\([0-9]{2}\)([\s])[0-9]{4,6}-[0-9]{4}"/> 
 						</p>
 						
 						<p> 
@@ -369,8 +369,8 @@
 						</p>
 
 						<p> 
-							<label class="login-cadastro" for="senha_cad">Confirme sua senha:</label>
-							<input class="login-cadastro" id="senha_cad" name="senha_cad" required="required" type="password" placeholder=""/>
+							<label class="login-cadastro" for="confirma_senha_cad">Confirme sua senha:</label>
+							<input class="login-cadastro" id="confirma_senha_cad" name="senha_cad" required="required" type="password" placeholder=""/>
 						</p>
 						
 						<p>

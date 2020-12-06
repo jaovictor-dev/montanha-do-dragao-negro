@@ -61,6 +61,72 @@ function start() {
 }
 
 
-window.addEventListener("load", start)
 
+//validar dados fale conosco
 
+function Enviar(){
+  if(document.dados.name.value=="" || document.dados.name.value.length < 8){
+    alert( "Preencha campo NOME corretamente!" );
+    document.dados.name.focus();
+    return false;
+  }
+  if( document.dados.mail.value=="" || document.dados.mail.value.indexOf('@')==-1 || document.dados.mail.value.indexOf('.')==-1 ){
+    alert( "Preencha campo E-MAIL corretamente!" );
+    document.dados.mail.focus();
+    return false;
+  }
+  if (document.dados.msg.value==""){
+    alert( "Preencha o campo MENSAGEM!" );
+    document.dados.msg.focus();
+    return false;
+  }
+  if (document.dados.msg.value.length < 50 ){
+    alert( "É necessario preencher o campo MENSAGEM com pelo menos 50 caracteres!");
+    document.dados.msg.focus();
+    return false;
+  }
+  alert( "Mensagem enviada com sucesso!");
+}
+
+//validar dados cadastro
+var nome_logar = document.getElementById("nome_cad")
+var senha = document.getElementById("senha_cad")
+var termos = document.getElementById("iaceito")
+
+function Cadastrar(){
+  if(document.cadastro.nome_cad.value=="" || document.cadastro.nome_cad.value.length < 5){
+    alert( "Preencha campo NOME corretamente!" );
+    document.cadastro.nome_cad.focus();
+    return false;
+  }
+  if(document.cadastro.email_cad.value=="" || document.cadastro.email_cad.value.length < 8){
+    alert( "Preencha campo E-MAIL corretamente!" );
+    document.cadastro.email_cad.focus();
+    return false;
+  }
+  if(document.cadastro.confirma_senha_cad.value!=senha.value){
+    alert( "As senhas não coincidem. Tente novamente!" );
+    document.cadastro.confirma_senha_cad.focus();
+    return false;
+  }
+  if(termos.checked != true){
+    alert( "Aceite os termos de Uso!" )
+    return false;
+  }
+  alert( "Cadastrado com sucesso!" )
+}
+
+//validar login
+
+function Logar(){
+  if(document.login.nome_login.value!=nome_logar.value){
+    alert( "Nome de usuario não encontrado" );
+    document.login.nome_login.focus();
+    return false;
+  }
+  if(document.login.senha_login.value!=senha.value){
+    alert( "Senha incorreta. Tente novamente")
+    document.login.senha_login.focus();
+    return false;
+  }
+}

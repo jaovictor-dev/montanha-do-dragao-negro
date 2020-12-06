@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 600px) and (max-width: 768px)">
     <link rel="stylesheet" href="mobile.css" media="screen and (min-width: 400px) and (max-width: 425px)">
+
+        <script src="script.js"></script>
+
 </head>
-<body>        
-  
+<body>
 <div id="interface">
 
     <header id="cabecalho">
@@ -88,7 +90,7 @@
                     <div class="categoria-titulo">
                         <h1>Fale conosco</h1>
                     </div>
-                    <form action="/pagina-processa-dados-do-form" method="post" class="faleconosco">
+                    <form name="dados" method="post" class="faleconosco" onsubmit="return Enviar();">
                         <div>
                             <label for="name">
                                 <em style="color: red">*</em>
@@ -111,7 +113,7 @@
                             <textarea id="msg"></textarea>
                         </div>
                         <div class="button">
-                            <button type="submit">Enviar</button>
+                            <input class="botao" name="Submit" type="submit"  class="enviar" value="Enviar dados"/>
                         </div>
                         <p style="color: red">* Campo obrigatório</p>
                         <p style="color: #696969">Iremos responder sua mensagem em até 365 anos úteis</p>
